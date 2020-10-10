@@ -1,0 +1,13 @@
+<hello name="{{ name }}"></hello>
+<p>
+	Start editing to see some magic happen :) sss
+</p>
+
+<input type="file" (change)="onFileChange($event)" />
+
+<div id="output"></div>
+<div *ngIf="jsonData">{{jsonData.Sheet1[0].Service}}</div>
+<br>
+<div *ngIf="willDownload">
+	<a id="download"> Download JSON File </a>
+</div>
